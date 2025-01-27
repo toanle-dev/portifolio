@@ -6,8 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "gh-page": "ng deploy --dir=docs/browser",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy --dir=docs/browser"
   },
   "private": true,
   "dependencies": {
