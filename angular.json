@@ -91,7 +91,7 @@
           "builder": "angular-cli-ghpages:deploy",
           "options": {
             "repo": "https://github.com/toanle-dev/portifolio.git",
-            "baseHref": "/profile/"
+            "baseHref": "/"
           }
         }
       }

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { STACK } from './home.mock';
 import { BusinessCardComponent } from '../../ui/business-card/business-card.component';
 
 @Component({
