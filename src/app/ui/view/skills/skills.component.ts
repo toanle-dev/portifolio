@@ -20,7 +20,7 @@ export class SkillsComponent {
     labels: ['Analista de Sistemas', 'Mobile', 'Backend', 'Frontend', 'UX/UI'],
     datasets: [
       {
-        data: [9, 8, 9, 10, 5],
+        data: [9, 9, 8, 10, 5],
         label: 'Minha Experiência',
         pointStyle: false,
         showLine: true,
@@ -45,7 +45,7 @@ export class SkillsComponent {
         },
 
         suggestedMin: 0,
-        suggestedMax: 11,
+        suggestedMax: 10,
       },
     },
   };
