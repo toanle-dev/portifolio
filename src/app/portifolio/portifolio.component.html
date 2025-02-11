@@ -1,0 +1,278 @@
+<div class="container mx-auto p-6 max-w-3xl bg-white">
+  <!-- Cabeçalho -->
+  <header class="mb-8">
+    <div class="flex w-full">
+      <h1 class="text-3xl font-bold text-gray-800">Toan Rodrigues Le</h1>
+      <app-skill-button class="ml-auto"></app-skill-button>
+    </div>
+
+    <div class="flex gap-1 my-3">
+      <div class="badge border-2 border-gray-800 p-3 font-semibold">
+        Fullstack
+      </div>
+      <div class="badge border-2 border-gray-800 p-3 font-semibold">
+        Angular
+      </div>
+      <div class="badge border-2 border-gray-800 p-3 font-semibold">NestJS</div>
+    </div>
+  </header>
+
+  <!-- Resumo -->
+  <section class="mb-8">
+    <div class="text-left bg-white">
+      <p class="mt-4 text-gray-600">
+        Desenvolvedor <strong>Full-Stack</strong> com mais de 10 anos de
+        experiência criando sistemas web, APIs e apps móveis. Já atuei nos
+        setores de <strong>Varejo, Transporte, Seguros e Financeiro</strong>,
+        sempre focado em eficiência e escalabilidade.
+      </p>
+      <p class="mt-4 text-gray-600">
+        Tenho experiência em <strong>Angular, NestJS e SQL</strong>, gosto de
+        desenvolver produtos digitais com performance, usabilidade e boas
+        práticas.
+      </p>
+
+      <div class="mt-6 flex gap-4 justify-center">
+        <figure
+          (click)="openLinkedin()"
+          class="w-8 cursor-pointer hover:scale-150"
+        >
+          <img src="./assets/logo/linkedin.svg" />
+        </figure>
+        <figure
+          (click)="openGithub()"
+          class="w-8 cursor-pointer hover:scale-150"
+        >
+          <img src="./assets/logo/github.svg" />
+        </figure>
+        <figure
+          (click)="openWhatsApp()"
+          class="w-8 cursor-pointer hover:scale-150"
+        >
+          <img src="./assets/logo/whatsapp.svg" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competências -->
+  <section class="mb-8 hidden">
+    <h2 class="text-xl font-bold mb-2">Principais Competências</h2>
+    <ul class="list-disc list-inside text-gray-800">
+      <li>
+        <strong>Frontend:</strong> Angular, Ionic, HTML5, CSS3, Typescript
+      </li>
+      <li><strong>Backend:</strong> NestJS, .NET Core, C#, APIs RESTful</li>
+      <li>
+        <strong>Banco de Dados:</strong> SQL Server, PostgreSQL, SQLite, Oracle,
+        Firebird
+      </li>
+      <li>
+        <strong>Ferramentas:</strong> Jenkins, AWS CodePipeline, GitHub Actions,
+        CI/CD
+      </li>
+      <li>
+        <strong>Metodologias:</strong> Agile, Scrum, Testes Unitários,
+        Acessibilidade
+      </li>
+    </ul>
+  </section>
+
+  <!-- Experiência Profissional -->
+  <section class="mb-8">
+    <ul
+      class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+    >
+      <!--Freelance -->
+      <li>
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/engineering.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-start mb-10 md:text-end">
+          <time class="font-mono italic">2023 - 2025</time>
+          <div class="text-lg font-black text-gray-800">Freelance</div>
+          <div class="text-sm">Desenvolvedor Fullstack</div>
+          <p class="text-gray-800 mb-2">
+            Atuei como desenvolvedor de software, prestando serviços para
+            diversas empresas em projetos sob demanda. Desenvolvi aplicações web
+            e móveis, design de APIs e integração com sistemas existentes.
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Itaú Unibanco -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/itau_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-end md:mb-10">
+          <time class="font-mono italic">2019 - 2023</time>
+          <div class="text-lg font-black text-gray-800">Itaú Unibanco</div>
+          <div class="text-sm">Engenheiro de Software</div>
+          <p class="text-gray-800 mb-2">
+            Desenvolvi soluções mobile com WebView e Angular para o SuperApp PF.
+            Trabalhei em squads ágeis para produtos de investimentos, com
+            integração de CI/CD (Jenkins, AWS CodePipeline, GitHub Actions).
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Reply -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/reply_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-start mb-10 md:text-end">
+          <time class="font-mono italic">2019 - 2019</time>
+          <div class="text-lg font-black text-gray-800">Reply</div>
+          <div class="text-sm">Desenvolvedor Full-Stack</div>
+          <p class="text-gray-800 mb-2">
+            Desenvolvi aplicativos híbridos com Ionic e Angular, além de APIs
+            com .NET Core e SQL Server. Colaborei com equipes de negócios e
+            UX/UI para entregar soluções alinhadas aos objetivos da empresa.
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- OSF Global Services -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/osf_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-end md:mb-10">
+          <time class="font-mono italic">2018 - 2019</time>
+          <div class="text-lg font-black text-gray-800">
+            OSF Global Services
+          </div>
+          <div class="text-sm">Programador Angular/Ionic</div>
+          <p class="text-gray-800 mb-2">
+            Desenvolvi aplicativos híbridos com Ionic, Angular, HTML5 e CSS3.
+            Participei do desenvolvimento de sistemas móveis para seguros, com
+            integração a APIs .NET e bancos de dados SQLite.
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- MadeinWeb e Mobile -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/madeinweb_mobile_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-start mb-10 md:text-end">
+          <time class="font-mono italic">2018 - 2018</time>
+          <div class="text-lg font-black text-gray-800">MadeinWeb e Mobile</div>
+          <div class="text-sm">Programador Angular/Ionic</div>
+          <p class="text-gray-800 mb-2">
+            Foquei no desenvolvimento de aplicativos móveis utilizando Ionic e
+            Angular, além de modelar e desenvolver APIs com .NET Core. Colaborei
+            com times de negócios e UX/UI para entregar soluções completas.
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- Paicon Technologies -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/paicon_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-end md:mb-10">
+          <time class="font-mono italic">2016 - 2017</time>
+          <div class="text-lg font-black text-gray-800">
+            Paicon Technologies
+          </div>
+          <div class="text-sm">Programador C#/Angular</div>
+          <p class="text-gray-800 mb-2">
+            Desenvolvi aplicativos híbridos com Ionic e Angular, além de
+            soluções web para um ERP da indústria química utilizando .NET e C#.
+            Também fui responsável pela modelagem de dados e migração de bancos
+            de dados (SQL Server, Oracle).
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- DotSE - Software Engineering -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/dotse_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-start mb-10 md:text-end">
+          <time class="font-mono italic">2013 - 2014</time>
+          <div class="text-lg font-black text-gray-800">
+            DotSE - Software Engineering
+          </div>
+          <div class="text-sm">Programador Delphi</div>
+          <p class="text-gray-800 mb-2">
+            Trabalhei no desenvolvimento de um sistema ERP para transportadora,
+            utilizando Delphi e PostgreSQL. Também fui responsável pelo
+            desenvolvimento de relatórios.
+          </p>
+        </div>
+        <hr />
+      </li>
+
+      <!-- CSP Controle e Automação Ltda. -->
+      <li>
+        <hr />
+        <div class="timeline-middle py-1">
+          <div class="avatar">
+            <div class="w-12 rounded-full">
+              <img src="./assets/logo/csp_logo.jpeg" />
+            </div>
+          </div>
+        </div>
+        <div class="timeline-end mb-10">
+          <time class="font-mono italic">2010 - 2014</time>
+          <div class="text-lg font-black text-gray-800">
+            CSP Controle e Automação Ltda.
+          </div>
+          <div class="text-sm">Analista de Sistemas</div>
+          <p class="text-gray-800 mb-2">
+            Atuei como analista de sistemas, resolvendo incidentes relacionados
+            a sistemas ERP para supermercados. Realizei migração de bases de
+            dados e manutenções em bancos de dados Firebird.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>

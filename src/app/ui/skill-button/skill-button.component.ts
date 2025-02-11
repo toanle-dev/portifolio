@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
-import { STACK } from '../../../pages/home/home.mock';
+import { Component, ElementRef, viewChild } from '@angular/core';
 import { ChartData, ChartOptions } from 'chart.js';
+import { STACK } from '../../portifolio/portifolio.mock';
 import { BaseChartDirective } from 'ng2-charts';
 
 @Component({
-  selector: 'app-skills',
+  selector: 'app-skill-button',
   standalone: true,
   imports: [BaseChartDirective],
-  templateUrl: './skills.component.html',
-  styleUrl: './skills.component.scss',
+  templateUrl: './skill-button.component.html',
+  styleUrl: './skill-button.component.scss',
 })
-export class SkillsComponent {
+export class SkillButtonComponent {
+  drawerId = 'drawerid';
+
+  inputToggle = viewChild.required<ElementRef>('inputToggle');
+
   backendStack = STACK.filter((a) => a.categoria == 'Backend')[0].tecnologias;
   frontendStack = STACK.filter((a) => a.categoria == 'Frontend')[0].tecnologias;
   enginesStack = STACK.filter((a) => a.categoria == 'Ferramentas Gerais')[0]
@@ -45,8 +49,13 @@ export class SkillsComponent {
         },
 
         suggestedMin: 0,
-        suggestedMax: 10,
+        suggestedMax: 11,
       },
     },
   };
+
+  toggleDetail() {
+    this.inputToggle().nativeElement.checked =
+      !this.inputToggle().nativeElement.checked;
+  }
 }

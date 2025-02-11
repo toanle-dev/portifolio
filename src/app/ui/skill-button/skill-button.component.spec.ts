@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DrawerComponent } from './drawer.component';
+import { SkillButtonComponent } from './skill-button.component';
 
-describe('DrawerComponent', () => {
-  let component: DrawerComponent;
-  let fixture: ComponentFixture<DrawerComponent>;
+describe('SkillButtonComponent', () => {
+  let component: SkillButtonComponent;
+  let fixture: ComponentFixture<SkillButtonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DrawerComponent]
+      imports: [SkillButtonComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DrawerComponent);
+    fixture = TestBed.createComponent(SkillButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
