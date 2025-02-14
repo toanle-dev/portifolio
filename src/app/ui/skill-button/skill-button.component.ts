@@ -11,6 +11,9 @@ import { BaseChartDirective } from 'ng2-charts';
   styleUrl: './skill-button.component.scss',
 })
 export class SkillButtonComponent {
+  constructor() {
+    setTimeout(() => this.toggleDetail(), 100);
+  }
   drawerId = 'drawerid';
 
   inputToggle = viewChild.required<ElementRef>('inputToggle');
