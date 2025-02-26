@@ -1,28 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
-import { SkillButtonComponent } from '../ui/skill-button/skill-button.component';
+import {
+  Router,
+  RouterLink,
+  RouterModule,
+  RouterOutlet,
+} from '@angular/router';
 
 @Component({
   selector: 'app-portifolio',
   standalone: true,
-  imports: [SkillButtonComponent],
+  imports: [RouterModule, RouterOutlet, RouterLink],
   templateUrl: './portifolio.component.html',
 })
 export class PortifolioComponent {
-  email = 'toan.rle@outlook.com';
-
-  openLinkedin(): void {
-    window.open(
-      'https://www.linkedin.com/in/toan-rodrigues-le-08868794/',
-      '_blank'
-    );
-  }
-
-  openGithub(): void {
-    window.open('https://github.com/toanle-dev', '_blank');
-  }
-
-  openWhatsApp() {
-    window.open('https://wa.me/5548991921025/', '_blank');
+  private router = inject(Router);
+  showLinks() {
+    this.router.navigate(['/links']);
   }
 }

@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "serif"],
+      },
+    },
   },
   plugins: [require("daisyui"), require("tailwindcss-animated")],
   daisyui: {

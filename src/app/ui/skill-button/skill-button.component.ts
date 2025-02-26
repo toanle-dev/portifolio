@@ -1,7 +1,7 @@
 import { Component, ElementRef, viewChild } from '@angular/core';
 import { ChartData, ChartOptions } from 'chart.js';
-import { STACK } from '../../portifolio/portifolio.mock';
 import { BaseChartDirective } from 'ng2-charts';
+import { STACK } from '../../portifolio/portifolio.mock';
 
 @Component({
   selector: 'app-skill-button',
@@ -12,7 +12,7 @@ import { BaseChartDirective } from 'ng2-charts';
 })
 export class SkillButtonComponent {
   constructor() {
-    setTimeout(() => this.toggleDetail(), 100);
+    // setTimeout(() => this.toggleDetail(), 100);
   }
   drawerId = 'drawerid';
 

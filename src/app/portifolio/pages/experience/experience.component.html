@@ -1,0 +1,19 @@
+<h1 class="animate-fade-up text-2xl font-extrabold text-gray-900 mb-6">
+  Experiência
+</h1>
+
+@for (exp of experiences; track $index) {
+
+<div class="mt-5">
+  <time class="font-mono text-sm text-gray-500 italic">{{ exp.period }}</time>
+  <div class="text-xl font-bold text-gray-900 mt-1">{{ exp.company }}</div>
+  <div class="text-base font-medium text-gray-700">
+    {{ exp.role }}
+  </div>
+  <p class="text-gray-600 mt-3 leading-relaxed">
+    {{ exp.description }}
+  </p>
+</div>
+
+<hr class="my-5" />
+}
