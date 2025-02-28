@@ -10,6 +10,11 @@ import { PortifolioComponent } from './portifolio/portifolio.component';
 export const routes: Routes = [
   {
     path: '',
+    pathMatch: 'full',
+    redirectTo: '/about',
+  },
+  {
+    path: '',
     component: PortifolioComponent,
     children: [
       {

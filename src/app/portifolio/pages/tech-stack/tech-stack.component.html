@@ -1,14 +1,13 @@
-<h1 class="animate-fade-up text-2xl font-extrabold text-gray-900 mb-6">
-  Stack
-</h1>
+<h1 class="text-2xl font-extrabold text-gray-900 mb-6">Tecnologias</h1>
 
 @for (category of stack; track $index) {
 
-<h2 class="text-lg font-light text-gray-600 py-4">
+<h2 class="font-light text-gray-600 pt-4">
   {{ category.categoria }}
 </h2>
-<hr class="py-3" />
-<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div
+  class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-5 gap-2"
+>
   <!-- Loop through each technology -->
   @for (tech of category.tecnologias; track $index) {
   <div class="p-4">
